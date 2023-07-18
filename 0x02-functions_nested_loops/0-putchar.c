@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include<string.h>
+#include "main.h"
 
 /**
  * main - control number
@@ -12,7 +11,7 @@ int i;
 int len;
 char str[] = "_putchar";
 len = strlen(str);
-for (i=0;i < len ;i++)
+for (i = 0; i < len ; i++)
 {
 	putchar(str[i]);
 }
