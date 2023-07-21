@@ -61,7 +61,7 @@ void prime_factor(long int num)
 int main(void)
 {
 
-	prime_factor(1231952);
+	prime_factor(612852475143);
 
 	return (0);
 }
