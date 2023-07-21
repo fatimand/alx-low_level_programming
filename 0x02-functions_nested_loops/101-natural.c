@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-long natural(long n);
+int natural(int n);
 /**
  * main - check Code
  *
@@ -9,7 +9,7 @@ long natural(long n);
  */
 int main(void)
 {
-	printf("%lu ", natural(10));
+	printf("%d", natural(10));
 	printf("\n");
 	return (0);
 }
@@ -18,15 +18,15 @@ int main(void)
  * @n: param
  * Return: sum
  */
-long natural(long n)
+int natural(int n)
 {
-	long i;
-	long sum;
+	int i;
+	int sum;
 
 	sum = 0;
-	for (i = 1; i < n; i++)
+	for (i = 1; i < 1024; i++)
 	{
-		if ((i % 3 == 0 || i % 5 == 0) && i != 1024)
+		if (i % 3 == 0 || i % 5 == 0)
 		{
 			sum += i;
 		}
