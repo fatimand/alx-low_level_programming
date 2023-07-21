@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-int natural(int n);
+int natural(void);
 /**
  * main - check Code
  *
@@ -9,16 +9,15 @@ int natural(int n);
  */
 int main(void)
 {
-	printf("%d", natural(10));
+	printf("%d", natural());
 	printf("\n");
 	return (0);
 }
 /**
  * natural - list th natural number
- * @n: param
  * Return: sum
  */
-int natural(int n)
+int natural(void)
 {
 	int i;
 	int sum;
