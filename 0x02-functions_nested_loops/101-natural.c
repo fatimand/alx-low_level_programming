@@ -28,10 +28,8 @@ int natural(int n)
 	{
 		if ((i % 3 == 0 || i % 5 == 0) && i != 1024)
 		{
-			printf("%d  ", i);
 			sum += i;
 		}
 	}
-	printf("\n");
 	return (sum);
 }
