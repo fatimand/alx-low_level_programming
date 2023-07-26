@@ -21,10 +21,6 @@ char *cap_string(char *s)
 			found = 0;
 			continue;
 		}
-		else if (s[i] == separators[1])
-		{
-			s[i] = ' ';
-		}
 		for (j = 0; j < 13; j++)
 		{
 			if (s[i] == separators[j])
