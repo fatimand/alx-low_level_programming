@@ -18,22 +18,22 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (s1[i] > s2[i])
 		{
-			val = 15;
+			val = s1[i] - s2[i];
 			break;
 		}
 		else if (s2[i] > s1[i])
 		{
-			val = -15;
+			val = s1[i] - s2[i];
 			break;
 		}
 	}
 	if (val == 0 && len1 > len)
 	{
-		val = 15;
+		 val = s1[len1] - s2[len];
 	}
 	else if (val == 0 && len2 > len)
 	{
-		val = -15;
+		 val = s1[len] - s2[len2];
 	}
 	return (val);
 }
