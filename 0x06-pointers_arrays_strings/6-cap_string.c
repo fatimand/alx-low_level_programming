@@ -15,13 +15,17 @@ char *cap_string(char *s)
 
 	for (i = 0; i < len; i++)
 	{
-		if (s[i] <= 'z' && s[i] >= 'a' && found == 1)
+		if (s[i] <= 'z' && s[i] >= 'a' && (found == 1 || i == 0))
 		{
-			s[i] = s[i] + 'A' - 'a';
+			s[i] += 'A' - 'a';
 			found = 0;
 			continue;
 		}
-		for (j = 0; j < 10; j++)
+		else if(s[i] == separators[1])
+		{
+			s[i] = ' ';
+		}
+		for (j = 0; j < 13; j++)
 		{
 			if (s[i] == separators[j])
 			{
