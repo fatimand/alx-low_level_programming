@@ -27,13 +27,9 @@ int _strcmp(char *s1, char *s2)
 			break;
 		}
 	}
-	if (val == 0 && len1 > len)
+	if (val == 0)
 	{
-		 val = s1[len1] - s2[len];
-	}
-	else if (val == 0 && len2 > len)
-	{
-		 val = s1[len] - s2[len2];
+		val = s1[len] - s2[len];
 	}
 	return (val);
 }
