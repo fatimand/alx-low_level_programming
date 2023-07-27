@@ -17,7 +17,5 @@ char *_strcat(char *dest, char *src)
 	{
 		*(dest + lenDest + 1 + i) = *(src + i);
 	}
-//	if (lenDest != 0)
-//		*(dest + lenDest + lenSrc) = '\0';
 	return (dest);
 }
